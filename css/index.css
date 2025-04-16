@@ -1,157 +1,196 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    border: 0px;
-    
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
 }
 
-body{
-    background-color: rgb(208, 195, 195);
-    
+body {
+  background-color: rgb(208, 195, 195);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.side{
-    color: rgb(232, 224, 224);
+.side {
+  color: rgb(232, 224, 224);
 }
 
-.card{
-    width: 28rem;
-    height: 44rem;
-    border-radius: 16px;
-    background-image: linear-gradient(180deg,rgba(75, 144, 173, 1) 50%, rgba(84, 194, 135, 1) 100%);
-    margin: 10px auto;
+.card {
+  width: 28rem;
+  border-radius: 16px;
+  background-image: linear-gradient(180deg, rgba(75, 144, 173, 1) 50%, rgba(84, 194, 135, 1) 100%);
+  padding-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.search{
-    background-color: white;
-    height: 50px;
-    width: 50px;
-    border-radius: 26px;
+.search {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search:hover {
+  background-color: #f0f0f0;
 }
 
 .nav {
-    display: flex;
-    margin: 0px 20px;
-    justify-content: space-between;
-    padding: 40px 6px; 
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 6px 20px 6px;
 }
 
-.nav input{
-    border-radius: 26px;
-    width: 20rem;
-    color: rgb(104, 104, 104);
-    padding-left: 20px;
-    font-size: 22px;
-    font-weight: 600;
+.nav input {
+  border-radius: 26px;
+  width: calc(100% - 70px);
+  color: black;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
-.nav input::placeholder{
-    padding-left: 20px;
-    font-size: 16px;
-    font-size: 16px;
+.nav input::placeholder {
+  font-size: 16px;
+  color: #888;
 }
 
-.search img{
-    height: 25px;
-    padding: 12px 0px 0px 14px;
+.search img {
+  height: 20px;
+  width: 20px;
 }
 
-.info{
-    padding-left: 28px;
+.info {
+  padding-left: 28px;
+  margin-top: 10px;
 }
 
-.info h2{ 
-    margin-bottom: -8px;
+.info h2 {
+  margin-bottom: -8px;
+  font-size: 1.8rem;
 }
 
-.info h3{
-    font-size: 20px;
-    padding-left: 2px;
+.info h3 {
+  font-size: 1rem;
+  padding-left: 2px;
+  font-weight: 400;
 }
-
-.weatherJpg img{
-  height: 12rem;
-}
-
 
 .weatherJpg {
-    margin:auto;
-    width: 200px;
+  margin: 20px auto;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.midText{
-    text-align: center;
+.weatherJpg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.midText {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .midText h1 {
-font-size: 3rem;
-margin-bottom: -10px;
+  font-size: 3.5rem;
+  margin-bottom: -10px;
+  font-weight: 600;
 }
 
 .midText h3 {
- font-size: 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .midText h2 {
-font-size: 2.5rem;
-font-weight: 600;
-padding-top: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 15px;
 }
 
 .lastText {
-    display: flex;
-    padding: 40px 30px 0px 30px;
-    justify-content: space-between;
+  display: flex;
+  padding: 30px 30px 0px 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.humidity img{
-height: 30px;
-padding-right: 10px;
+.humidity img,
+.wind img {
+  height: 24px;
+  width: 24px;
+  padding-right: 8px;
 }
 
-.wind img{
-height: 30px;
-padding-right: 10px;
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
 }
 
-.humidity{
-    display: flex;
+.lastText h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.wind{
-    display: flex;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px 0 45px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-around;
+.footer p {
+  font-size: 0.85rem;
+  font-weight: 400;
 }
 
-.footer p:nth-of-type(2){
-    margin-left: 40px;
+.placeJs::placeholder {
+  color: red !important;
+  opacity: 0.7;
 }
 
-.placeJs::placeholder{
- color: red;
- font-weight: 700;
- font-size: 16px !important;
- padding-left: 2px !important;
+.nav input.error {
+  border: 2px solid red;
+  animation: shake 0.5s;
 }
 
-.errJs{
-    background-color: rgba(255, 255, 255, 0.955);
-    height: 50px;
-    width: 340px;
-    position: relative;
-    bottom: 20px;
-    left: 26px;
-    border-radius: 12px;
-    color: rgb(79, 79, 79);
-    box-sizing: border-box;
-    padding: 2px 0px 0px 10px;
-    font-size: 17px;
-    font-weight: 700;   
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.error-message {
+  color: #ffdddd;
+  background-color: rgba(255, 0, 0, 0.2);
+  text-align: center;
+  padding: 8px;
+  margin: 10px 20px 0 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: none;
 }

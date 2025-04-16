@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>WeatherApp</title>
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-<div class="card">
-
- <div class="nav">
-    <input type="text" placeholder="Enter city name">
-
-    <div class="search">
-       <img src="/images/search.png" alt="search">
-    </div>
- </div>
-
-    <div class="err"> </div>
-
-    <div class="info side">
-       <h2>Sunny</h2>
-       <h3 class="side">In</h3>
-    </div>
-
-    <div class="weatherJpg">
-       <img src="/images/clear.png" alt="Sun's image">
-    </div>
-
-     <div class="midText">
-      <h1>22°C</h1> 
-      <h3 class="side">Feels like 28°C</h3>
-      <h2>Bhuj</h2>
-     </div>
-
-     <div class="lastText">
-       <div class="humidity">
-          <img src="/images/humidity.png" alt="humidity png">
-          <h2 class="side">53%</h2>
-       </div>
-
-       <div class="wind">
-         <img src="/images/wind.png" alt="wind png">
-         <h2 class="side">5.66 km/h</h2>
-       </div>
-     </div>
-
-      <div class="footer">
-         <p class="p1 side">Humidity</p>
-         <p class="side">Wind Speed</p>       
+    <!-- Corrected CSS path -->
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="nav">
+        <input type="text" placeholder="Enter city name" />
+        <div class="search">
+          <!-- Corrected image path -->
+          <img src="../images/search.png" alt="search" />
+        </div>
       </div>
 
-</div>    
+      <!-- Added error display element -->
+      <div class="error-message" style="color: red; text-align: center; padding: 5px; display: none">
+        Invalid city name or API error.
+      </div>
 
-   <script src="/js/index.js"></script>
-</body>
+      <div class="info side">
+        <h2>Sunny</h2>
+        <h3 class="side">In</h3>
+      </div>
+
+      <div class="weatherJpg">
+        <!-- Corrected image path -->
+        <img src="../images/clear.png" alt="Weather condition image" />
+      </div>
+
+      <div class="midText">
+        <h1>22°C</h1>
+        <h3 class="side">Feels like 28°C</h3>
+        <h2>Bhuj</h2>
+      </div>
+
+      <div class="lastText">
+        <div class="humidity">
+          <!-- Corrected image path -->
+          <img src="../images/humidity.png" alt="humidity png" />
+          <h2 class="side">53%</h2>
+        </div>
+
+        <div class="wind">
+          <!-- Corrected image path -->
+          <img src="../images/wind.png" alt="wind png" />
+          <h2 class="side">5.66 km/h</h2>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p class="p1 side">Humidity</p>
+        <p class="side">Wind Speed</p>
+      </div>
+    </div>
+
+    <!-- Corrected JS path -->
+    <script src="../js/index.js"></script>
+  </body>
 </html>
